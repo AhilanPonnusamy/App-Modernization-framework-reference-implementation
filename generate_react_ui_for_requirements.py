@@ -9,7 +9,7 @@ def query_llm(prompt, llm_url):
         "Content-Type": "application/json"
     }
     payload = {
-        "model": "gpt-3.5-turbo",
+        "model": "granite",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
