@@ -35,16 +35,14 @@ The following is the sysem specification that I used for this project, I do beli
 2. Select **createOrUpdateOwnerForm.html** under owners folder and click on **Generate Requirements** button on **File Workbench** tab. The system will display the generated requirements in a text box, make necessary changes and save the requirments by adding a new module name called "Owners" from the "Select a module name/tag" drop down.
 ![App UI](./images/SaveRequirments_main.png)    
 
->[!WARNING]
->You may periodically face the following context window size error. Clik on the clear conversation button on the left side to flush the data and try again.
+3. Repeat the process and save generated requirements for all files under owners, pets and vets folders. Make sure to enter/select the appropriate module name before saving the requiements. e.g. All requirement files under vets should be saved with **vets** as the module name etc. **This step is important to group the related requirments together in the following steps.**
+
+>[!NOTE]
+>You may use the **Generated Requirement Files** tab functionality to edit the requirement files at any time once the requirements are created.
  
-3. you can try the following prompts to try with **Use RAG** option selected
-     - can you transfer $50 to ram?
-     - can you transfer $580 to john?
-     - can you transfer $100 to peter?
-     - can you add joseph to my account?
-     - can you add allan to my account?
-     - can you remove john from my account?
-     - can you remove mark from my account?
-   
+4. Navigate to the **Functional Requirements Workbench** tab. Select "<All>" as the grouping name and click on ** Generate Functional Requirements ** button to generate consolidated requirements for owners, pets and vets interaction layer.
+![App UI](./images/Generate_Consolidate_Requirements.png)
+
+>[!NOTE]
+>Depending on your project, you may also want to generate functional requirements for other layers such as business logic tier, partner APIs and batch scripts.
 ***Have fun!!!!!***
