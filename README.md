@@ -15,7 +15,7 @@ The following is the sysem specification that I used for this project, I do beli
 
 2. Download this code repository (install git if it is not already setup, You can also downlod the zip file directly from the main page under code option as an alternate)
 
-3. Download and serve the grantile codel model in InstructLab as shown below. Make sure the context length (max_ctx_size) is set to a higher number e.g., 100k in the config.yaml file.
+3. Download and serve the grantile codel model in InstructLab as shown below. Make sure the context length (max_ctx_size) is set to a higher number e.g. 100k in the config.yaml file.
 ```
   $ ilab model serve --model-path models/granite-8b-code-instruct-128k.Q5_K_M.gguf
 ```
@@ -24,17 +24,15 @@ The following is the sysem specification that I used for this project, I do beli
 ```
   $ streamlit run requirements_manager_ui.py
 ```
->[!NOTE]
+>[!WARNING]
 >This tool is a reference implementation of the proposed app modernization framework. Necessary updates must be made to extend this for entperise use.
 > 
-## Testing
+## Generating Requirements for Legacy Application
 
-Now, that the application and the backend services are up and running, it is now time to take it for a spin
+1. Enter the folder path for the Spring petclinic application and Load the project structure e.g. spring-petclinic/src/main/resources/templates (User Interface layer)
+![App UI](./images/LoadProject.png)
 
-1. With **Use RAG** option unselected, submit the following question **can you transfer $50 to joseph?**. Once submitted, you will see some activity in streamlit console and in about 45 seconds a generic LLM response is dislayed in the UI as shown below.
-![App UI](./images/WithoutRAG.jpg)
-
-2. With **Use RAG** option selected, submit the same question **can you transfer $50 to joseph?** you will now see a more context aware message as shown below
+3. With **Use RAG** option selected, submit the same question **can you transfer $50 to joseph?** you will now see a more context aware message as shown below
 ![App UI](./images/WithRAG.jpg)    
 
 >[!WARNING]
