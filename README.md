@@ -16,6 +16,7 @@ The following is the sysem specification that I used for this project, A lower c
 2. Download this code repository (install git if it is not already setup, You can also downlod the zip file directly from the main page under code option as an alternate)
 
 3. Download and serve the grantile code model in InstructLab as shown below. Make sure the context length (max_ctx_size) is set to a higher number e.g. 100k in the **config.yaml** file to unilize the bigger context window available in the 128k model.
+![App UI](./images/ContextSize.png)
 ```
   $ ilab model serve --model-path models/granite-8b-code-instruct-128k.Q5_K_M.gguf
 ```
