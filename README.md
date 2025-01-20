@@ -30,10 +30,10 @@ The following is the sysem specification that I used for this project, I do beli
 ## Generating Requirements for Legacy Application
 
 1. Enter the folder path for the Spring petclinic application and Load the project structure e.g. spring-petclinic/src/main/resources/templates (User Interface layer)
-![App UI](./images/LoadProject_main.png)
+![App UI](./images/LoadfProject_main.png)
 
-3. With **Use RAG** option selected, submit the same question **can you transfer $50 to joseph?** you will now see a more context aware message as shown below
-![App UI](./images/WithRAG.jpg)    
+2. Select **createOrUpdateOwnerForm.html** under owners folder and click on **Generate Requirements** button on **File Workbench** tab. The system will display the generated requirements in a text box, make necessary changes and save the requirments by adding a new module name called "Owners" from the "Select a module name/tag" drop down.
+![App UI](./images/SaveRequirments_main.png)    
 
 >[!WARNING]
 >You may periodically face the following context window size error. Clik on the clear conversation button on the left side to flush the data and try again.
