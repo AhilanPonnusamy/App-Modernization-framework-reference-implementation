@@ -58,4 +58,7 @@ The following is the sysem specification that I used for this project, I do beli
 ![App UI](./images/GenerateAPIs.png)   
 
 8. Repeat the above step for generating Test cases for the APIs by selecting **Generate Test Cases** as the operation in the second drop down and clicking on **Generate Test Cases** button.
-![App UI](./images/GenerateTestcases.png)  
+![App UI](./images/GenerateTestcases.png)
+
+9. The next step is to generate UI code, for this select **Generate UI** as the operation from the second drop down, copy and paste the functional requirements of the desired screen in the **Enter Requirements** text box e.g.,**OWNERS::owners-ownerDetails.html-requirements.txt** and click on **Generate UI** button.
+![App UI](./images/GenerateUI.png)
