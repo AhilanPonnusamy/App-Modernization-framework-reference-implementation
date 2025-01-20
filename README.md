@@ -1,4 +1,4 @@
-# Application Modernization Framework Reference Implementation
+# Application Modernization Framework - Reference Implementation
 
 This comprehensive guide provides step-by-step instructions for configuring and running the App modernization reference implementation tool. This tool is developed by a LLM using progressive prompting technique with minimal edits. It can be deployed and run on local machine and can be modified to work with your model of choice with minimal code changes.
 The following is the sysem specification that I used for this project, A lower configuration will work just fine apart from notable response time delay.
