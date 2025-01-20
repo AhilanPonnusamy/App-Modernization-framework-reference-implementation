@@ -40,7 +40,7 @@ The following is the sysem specification that I used for this project, A lower c
 >[!NOTE]
 >You may use the **Generated Requirement Files** tab functionality to edit the requirement files at any time once the requirements are created.
  
-4. Navigate to the **Functional Requirements Workbench** tab. Select "\<All\>" as the grouping name and click on ** Generate Functional Requirements ** button to generate consolidated requirements for owners, pets and vets interaction layer. Review, make necessary edit/ add new requirements and save the requirements file.
+4. Navigate to the **Functional Requirements Workbench** tab. Select "\<All\>" as the grouping name and click on **Generate Functional Requirements** button to generate consolidated requirements for owners, pets and vets interaction layer. Review and make necessary edits and save the requirements file.
 ![App UI](./images/Generate_Consolidate_Requirements.png)
 
 >[!NOTE]
@@ -48,15 +48,15 @@ The following is the sysem specification that I used for this project, A lower c
 
 ## Generating Artifacts for the new Application
 
-### This reference implementation gerenates Quarkus framework as the target application framework.
+### This reference implementation uses Quarkus framework,React and postgres as the target platform.
 
-5. Navigate to the **Moderization Workbench** tab. Select the newly created requirements file **<ALL>::system-requirements.txt** from the drop down and select **Generate data model and SQL** option from the second drop down. The system will invoke the LLM and display the generated output. Review the output for completeness and save it.
+5. Navigate to the **Moderization Workbench** tab. Select the newly created requirements file **\<ALL\>::system-requirements.txt** from the drop down and select **Generate data model and SQL** option from the second drop down. The system will invoke the LLM and display the generated output. Review the output for completeness, make necessary edits and save it.
 ![App UI](./images/DatamodelandSQL.png)
 
 6. Copy owners table sql script. Select **Generate ORM objects** from the second drop down and click on **Generate ORM objects**  button. Wait for the LLM response, review the output for accuracy and completeness and save the artifact.
 ![App UI](./images/GenerateORM.png)
 
-7. Repeat the above step for generating API code by selecting **Generate APIs** as the operation in the second drop down and clicking on **Generate APIs ** button.
+7. Repeat the above step for generating API code by selecting **Generate APIs** as the operation in the second drop down, providing ORM object as the input and clicking on **Generate APIs** button.
 ![App UI](./images/GenerateAPIs.png)   
 
 8. Repeat the above step for generating Test cases for the APIs by selecting **Generate Test Cases** as the operation in the second drop down and clicking on **Generate Test Cases** button.
