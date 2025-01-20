@@ -51,5 +51,11 @@ The following is the sysem specification that I used for this project, I do beli
 5. Navigate to the **Moderization Workbench** tab. Select the newly created requirements file **<ALL>::system-requirements.txt** from the drop down and select **Generate data model and SQL** option from the second drop down. The system will invoke the LLM and display the generated output. Review the output for completeness and save it.
 ![App UI](./images/DatamodelandSQL.png)
 
-6. Copy owners table sql script. Select ** Generate ORM objects** from the second drop down and click on ** Generate ORM objects**  button. Wait for the LLM response, review the output for accuracy and completeness and save the artifact.
-7. ![App UI](./images/GenerateORM.png)
+6. Copy owners table sql script. Select **Generate ORM objects** from the second drop down and click on **Generate ORM objects**  button. Wait for the LLM response, review the output for accuracy and completeness and save the artifact.
+![App UI](./images/GenerateORM.png)
+
+7. Repeat the above step for generating API code by selecting **Generate APIs** as the operation in the second drop down and clicking on **Generate APIs ** button.
+![App UI](./images/GenerateAPIs.png)   
+
+8. Repeat the above step for generating Test cases for the APIs by selecting **Generate Test Cases** as the operation in the second drop down and clicking on **Generate Test Cases** button.
+![App UI](./images/GenerateTestcases.png)  
