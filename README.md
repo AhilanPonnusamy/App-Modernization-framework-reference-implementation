@@ -30,7 +30,7 @@ The following is the sysem specification that I used for this project, I do beli
 ## Generating Requirements for Legacy Application
 
 1. Enter the folder path for the Spring petclinic application and Load the project structure e.g. spring-petclinic/src/main/resources/templates (User Interface layer)
-![App UI](./images/LoadProject.png)
+![App UI](./images/LoadProject_main.png)
 
 3. With **Use RAG** option selected, submit the same question **can you transfer $50 to joseph?** you will now see a more context aware message as shown below
 ![App UI](./images/WithRAG.jpg)    
