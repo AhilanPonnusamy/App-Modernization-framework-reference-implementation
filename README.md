@@ -40,9 +40,16 @@ The following is the sysem specification that I used for this project, I do beli
 >[!NOTE]
 >You may use the **Generated Requirement Files** tab functionality to edit the requirement files at any time once the requirements are created.
  
-4. Navigate to the **Functional Requirements Workbench** tab. Select "<All>" as the grouping name and click on ** Generate Functional Requirements ** button to generate consolidated requirements for owners, pets and vets interaction layer.
+4. Navigate to the **Functional Requirements Workbench** tab. Select "<All>" as the grouping name and click on ** Generate Functional Requirements ** button to generate consolidated requirements for owners, pets and vets interaction layer. Review, make necessary edit/ add new requirements and save the requirements file.
 ![App UI](./images/Generate_Consolidate_Requirements.png)
 
 >[!NOTE]
 >Depending on your project, you may also want to generate functional requirements for other layers such as business logic tier, partner APIs and batch scripts.
-***Have fun!!!!!***
+
+## Generating Artifacts for the new Application
+
+5. Navigate to the **Moderization Workbench** tab. Select the newly created requirements file **<ALL>::system-requirements.txt** from the drop down and select **Generate data model and SQL** option from the second drop down. The system will invoke the LLM and display the generated output. Review the output for completeness and save it.
+![App UI](./images/DatamodelandSQL.png)
+
+6. Copy owners table sql script. Select ** Generate ORM objects** from the second drop down and click on ** Generate ORM objects**  button. Wait for the LLM response, review the output for accuracy and completeness and save the artifact.
+7. ![App UI](./images/GenerateORM.png)
