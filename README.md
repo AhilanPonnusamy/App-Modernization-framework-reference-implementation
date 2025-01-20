@@ -66,4 +66,4 @@ The following is the sysem specification that I used for this project, A lower c
 ![App UI](./images/GenerateUI.png)
 
 > [!TIP]
-> The reference implementation utilizes generic prompts to facilitate seamless transitions between different models. However, employing model-specific prompt templates, such as those provided here, can significantly enhance the accuracy and consistency of the responses.
+> The reference implementation utilizes generic prompts to facilitate seamless transitions between different models. However, employing model specific prompt templates, such as those provided here(https://www.ibm.com/granite/docs/models/code/#code-generation), can significantly enhance the accuracy and consistency of the responses.
