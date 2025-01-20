@@ -1,0 +1,76 @@
+COMMON
+--------------------------------------------------
+ The system shall have a home page with a welcome message and a picture of pets.
+ The system shall be able to display the welcome message in the language specified by the user.
+ The system shall be able to display the image of pets regardless of the language selected by the user.
+ The system shall be able to handle requests from different users and display the appropriate content based on their preferences.
+ The sytem shall provide the following options in home page for the user to access Owners, veterinarians
+
+VET
+--------------------------------------------------
+The system shall display a list of veterinarians with their names and specialties.
+The system shall allow the user to navigate through multiple pages of veterinarians using pagination.
+The system shall allow the user to rate a veternerian and add comments based on user feedback. 
+The system shall display average rating of the veterenian which is the average of all ratings recieved. 
+The system shall provide a way for the user to view the rating and coments history for the vet.
+
+PETS
+--------------------------------------------------
+ The system shall display a form for adding visits to pets, with fields for the date and description of the visit.
+ The system shall display a list of previous visits for each pet, including the date and description of each visit.
+ The system shall allow users to add new visits to pets, with validation for the date and description fields.
+ The system shall store the date and description of each visit in a database, associated with the corresponding pet.
+ The system shall display the owner's name along with the pet's details on the visit form and the previous visits list.
+ The system shall allow users to edit their own visits, but not those of other owners.
+ The system shall allow users to delete their own visits, but not those of other owners.
+ The system shall display a warning message if a user attempts to delete a visit that is not theirs.
+ The system shall display a warning message if a user attempts to edit a visit that is not theirs.
+ The system shall display a warning message if a user attempts to add a visit with an invalid date or description.
+ The system shall allow users to search for pets by owner, and display the list of pets along with their details and previous visits.
+
+PETS
+--------------------------------------------------
+The system shall display a form for creating or updating a pet, including fields for the pet's name, birth date, and type.
+ The system shall validate that all required fields are filled out before submitting the form.
+ The system shall display an error message if there is a validation error or if the pet cannot be saved.
+ The system shall allow the user to select from a list of available types for the pet.
+ The system shall display the owner's name in the form, based on the owner's ID associated with the pet.
+ The system shall save the pet and return to the owner's details page upon successful submission of the form.
+
+OWNERS
+--------------------------------------------------
+The system shall display a details page with a table of all owners information, including name, address, city, and telephone.
+The system shall allow users to edit owner information and add new pets.
+The system shall allow users to view pet information, including name, birth date, type, and visit history.
+The system shall allow users to edit pet information and add new visits by selecting a Vet. 
+The system shall  allow the user to rate and comment a Vet.
+
+OWNERS
+--------------------------------------------------
+The system shall display all owner details in a table format.
+The table shall have the following columns: Name, Address, City, Telephone, and Pets.
+The system shall allow users to sort the data in each column by clicking on the column header.
+The system shall allow users to search for owners based on their name or address including first name, last name, zip code and street name.
+The system shall allow users to filter the list of owners by selecting a specific city or date range.
+The system shall allow users to paginate through the results by selecting a page number from a drop-down menu or using navigation buttons.
+The system shall display the total number of pages and the current page number in the pagination control with 10 rows per page as default. 
+The system shall display the number of items per page selector in the pagination control.
+The system shall allow users to add new owners by clicking on a "Add Owner" button.
+The system shall allow users to edit existing owners by clicking on an owner's name in the list.
+The system shall allow users to delete existing owners by clicking on a "Delete" button next to an owner's name in the list.
+The system shall display an error message if there is a problem with the database connection or data retrieval.
+
+OWNERS
+--------------------------------------------------
+ The system shall include input fields for the owner's first name, last name, address, city, and telephone number.
+ The system shall include a submit button with the text "Add Owner" or "Update Owner", depending on whether the owner is being added or updated.
+
+OWNERS
+--------------------------------------------------
+The system shall have a form to search for owners by last name.
+The system shall display the last name of each owner in a table.
+The system shall allow the user to add a new owner.
+The system shall allow the user to update an existing owner.
+The system shall allow the user to delete an existing owner.
+
+

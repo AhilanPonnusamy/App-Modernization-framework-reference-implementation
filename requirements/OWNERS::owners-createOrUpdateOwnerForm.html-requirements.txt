@@ -1,0 +1,2 @@
+ The system shall include input fields for the owner's first name, last name, address, city, and telephone number.
+ The system shall include a submit button with the text "Add Owner" or "Update Owner", depending on whether the owner is being added or updated.

@@ -1,0 +1,11 @@
+ The system shall display a form for adding visits to pets, with fields for the date and description of the visit.
+ The system shall display a list of previous visits for each pet, including the date and description of each visit.
+ The system shall allow users to add new visits to pets, with validation for the date and description fields.
+ The system shall store the date and description of each visit in a database, associated with the corresponding pet.
+ The system shall display the owner's name along with the pet's details on the visit form and the previous visits list.
+ The system shall allow users to edit their own visits, but not those of other owners.
+ The system shall allow users to delete their own visits, but not those of other owners.
+ The system shall display a warning message if a user attempts to delete a visit that is not theirs.
+ The system shall display a warning message if a user attempts to edit a visit that is not theirs.
+ The system shall display a warning message if a user attempts to add a visit with an invalid date or description.
+ The system shall allow users to search for pets by owner, and display the list of pets along with their details and previous visits.

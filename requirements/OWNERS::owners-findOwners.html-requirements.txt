@@ -1,0 +1,5 @@
+The system shall have a form to search for owners by last name.
+The system shall display the last name of each owner in a table.
+ The system shall allow the user to add a new owner.
+ The system shall allow the user to update an existing owner.
+  The system shall allow the user to delete an existing owner.

@@ -1,0 +1,5 @@
+The system shall display a details page with a table of owner information, including name, address, city, and telephone.
+ The system shall allow users to edit owner information and add new pets.
+ The system shall allow users to view pet information, including name, birth date, type, and visit history.
+  The system shall allow users to edit pet information and add new visits by selecting a Vet. 
+  The system shall  allow the user to rate and comment a Vet.

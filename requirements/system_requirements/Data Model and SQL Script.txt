@@ -1,0 +1,189 @@
+Processing file: requirements/system_requirements/<ALL>::system-requirements.txt
+Generating Data Model...
+
+Generated Data Model:
+Here is the data model for the given requirements:
+ 
+
+ ENTITY-RELATIONSHIP DIAGRAM (ERD)
+ 
+
+ Here is a description of the tables, fields, types, and relationships in the ERD:
+ 
+
+ 1. Owners Table: This table stores information about pet owners. It has the following fields:
+ 
+
+ - Owner ID (primary key): A unique identifier for each owner.
+ - First Name: The first name of the owner.
+ - Last Name: The last name of the owner.
+ - Address: The address of the owner's residence.
+ - City: The city where the owner lives.
+ - Telephone: The telephone number of the owner.
+ 
+
+ 2. Pets Table: This table stores information about pets. It has the following fields:
+ 
+
+ - Pet ID (primary key): A unique identifier for each pet.
+ - Owner ID (foreign key): The ID of the owner who owns the pet.
+ - Name: The name of the pet.
+ - Birth Date: The date when the pet was born.
+ - Type: The type of the pet.
+ 
+
+ 3. Visits Table: This table stores information about visits to pets. It has the following fields:
+ 
+
+ - Visit ID (primary key): A unique identifier for each visit.
+ - Pet ID (foreign key): The ID of the pet that was visited.
+ - Date: The date of the visit.
+ - Description: A description of the visit.
+ 
+
+ 4. Veterinarians Table: This table stores information about veterinarians. It has the following fields:
+ 
+
+ - Veterinarian ID (primary key): A unique identifier for each veterinarian.
+ - Name: The name of the veterinarian.
+ - Specialty: The specialty of the veterinarian.
+ 
+
+ 5. Owner Visits Table: This table stores information about visits to pets by owners. It has the following fields:
+ 
+
+ - Visit ID (foreign key): The ID of the visit.
+ - Owner ID (foreign key): The ID of the owner who made the visit.
+ - Veterinarian ID (foreign key): The ID of the veterinarian who attended the visit.
+ 
+
+ 6. Pet Visits Table: This table stores information about visits to pets by veterinarians. It has the following fields:
+ 
+
+ - Visit ID (foreign key): The ID of the visit.
+ - Pet ID (foreign key): The ID of the pet that was visited.
+ - Veterinarian ID (foreign key): The ID of the veterinarian who attended the visit.
+ 
+
+ 7. Owner Pets Table: This table stores information about pets owned by each owner. It has the following fields:
+ 
+
+ - Owner ID (foreign key): The ID of the owner who owns the pet.
+ - Pet ID (foreign key): The ID of the pet that is owned by the owner.
+ 
+
+ 8. Veterinarian Visits Table: This table stores information about visits to pets by veterinarians. It has the following fields:
+ 
+
+ - Visit ID (foreign key): The ID of the visit.
+ - Veterinarian ID (foreign key): The ID of the veterinarian who attended the visit.
+ - Pet ID (foreign key): The ID of the pet that was visited by the veterinarian.
+ 
+
+ 9. Owner Ratings Table: This table stores information about ratings given by owners to veterinarians. It has the following fields:
+ 
+
+ - Owner ID (foreign key): The ID of the owner who gave the rating.
+ - Veterinarian ID (foreign key): The ID of the veterinarian who received the rating.
+ - Rating: The rating given by the owner to the veterinarian.
+ - Comment: A comment provided by the owner about the veterinarian's services.
+ 
+
+ 10. Veterinarian Ratings Table: This table stores information about ratings given by pet owners to veterinarians. It has the following fields:
+ 
+
+ - Veterinarian ID (foreign key): The ID of the veterinarian who received the rating.
+ - Owner ID (foreign key): The ID of the owner who gave the rating.
+ - Rating: The rating given by the owner to the veterinarian.
+ - Comment: A comment provided by the owner about the veterinarian's services.
+ 
+
+ Relationships between tables:
+ 
+
+ 1. Owners Table and Pets Table: One owner can own multiple pets, and one pet can belong to only one owner. This relationship is represented by a foreign key constraint in the Pets table that references the Owner ID field in the Owners table.
+ 
+
+ 2. Visits Table and Pets Table: A visit can be associated with one or more pets, and a pet can have multiple visits associated with it. This relationship is represented by foreign key constraints in both the Visits table and the Pet Visits table that reference the Pet ID field in the Pets table.
+ 
+
+ 3. Veterinarians Table and Veterinarian Visits Table: A veterinarian can attend multiple visits, and a visit can be attended by one or more veterinarians. This relationship is represented by foreign key constraints in both the Veterinarians table and the Veterinarian Visits table that reference each other's primary keys.
+ 
+
+ 4. Owner Visits Table and Owners Table: An owner visit can be associated with only one owner, and an owner can have multiple visits associated with them. This relationship is represented by foreign key constraints in both the Owner Visits table and the Owners table that reference each other's primary keys.
+ 
+
+ 5. Pet Visits Table and Pets Table: A pet visit can be associated with only one pet, and a pet can have multiple visits associated with it. This relationship is represented by foreign key constraints in both the Pet Visits table and the Pets table that reference each other's primary keys.
+ 
+
+ 6. Owner Ratings Table and Veterinarians Table: An owner rating can be associated with only one veterinarian, and a veterinarian can receive multiple ratings from owners. This relationship is represented by foreign key constraints in both the Owner Ratings table and the Veterinarians table that reference each other's primary keys.
+ 
+
+ 7. Veterinarian Ratings Table and Owners Table: A veterinarian rating can be associated with only one owner, and an owner can receive multiple ratings from veterinarians. This relationship is represented by foreign key constraints in both the Veterinarian Ratings table and the Owners table that reference each other's primary keys.
+ 
+
+ 8. Owner Pets Table and Pets Table: An owner pet can be associated with only one pet, and a pet can have multiple owners associated with it. This relationship is represented by foreign key constraints in both the Owner Pets table and the Pets table that reference each other's primary keys.
+ 
+
+ Overall, the ERD provides a comprehensive representation of the data model for the given requirements, including the entities, fields, types, and relationships between them.
+
+Generating SQL Script...
+
+Generated SQL Script:
+Here is a sample SQL script that creates the necessary tables and relationships based on the data model implied by the requirements:
+ 
+
+ CREATE TABLE Owners (
+ OwnerID INT PRIMARY KEY,
+ FirstName VARCHAR(50) NOT NULL,
+ LastName VARCHAR(50) NOT NULL,
+ Address VARCHAR(100) NOT NULL,
+ City VARCHAR(50) NOT NULL,
+ Telephone VARCHAR(20) NOT NULL
+ );
+ 
+
+ CREATE TABLE Pets (
+ PetID INT PRIMARY KEY,
+ OwnerID INT NOT NULL,
+ Name VARCHAR(50) NOT NULL,
+ BirthDate DATE NOT NULL,
+ Type VARCHAR(50) NOT NULL,
+ FOREIGN KEY (OwnerID) REFERENCES Owners (OwnerID)
+ );
+ 
+
+ CREATE TABLE Visits (
+ VisitID INT PRIMARY KEY,
+ PetID INT NOT NULL,
+ Date DATE NOT NULL,
+ Description TEXT NOT NULL,
+ FOREIGN KEY (PetID) REFERENCES Pets (PetID)
+ );
+ 
+
+ CREATE TABLE Veterinarians (
+ VetID INT PRIMARY KEY,
+ Name VARCHAR(50) NOT NULL,
+ Specialty VARCHAR(50) NOT NULL
+ );
+ 
+
+ CREATE TABLE Ratings (
+ RatingID INT PRIMARY KEY,
+ VisitID INT NOT NULL,
+ VetID INT NOT NULL,
+ stars INT NOT NULL,
+ comments TEXT NOT NULL,
+ FOREIGN KEY (VisitID) REFERENCES Visits (VisitID),
+ FOREIGN KEY (VetID) REFERENCES Veterinarians (VetID)
+ );
+ 
+
+ This script creates four tables: Owners, Pets, Visits, and Veterinarians. The Owners table has columns for the owner's ID, first name, last name, address, city, and telephone number. The Pets table has columns for the pet's ID, owner's ID, name, birth date, and type. The Visits table has columns for the visit's ID, pet's ID, date, and description. The Veterinarians table has columns for the veterinarian's ID, name, and specialty.
+ 
+
+ The script also creates a ratings table that allows users to rate veterinarians and add comments based on their visits. This table has columns for the rating's ID, visit's ID, veterinarian's ID, number of stars, and comments.
+ 
+
+ Finally, the script includes foreign key constraints in the Pets and Visits tables that link them to the Owners table. These constraints ensure that each pet and visit is associated with a valid owner.

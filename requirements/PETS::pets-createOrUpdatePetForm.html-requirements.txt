@@ -1,0 +1,6 @@
+The system shall display a form for creating or updating a pet, including fields for the pet's name, birth date, and type.
+ The system shall validate that all required fields are filled out before submitting the form.
+ The system shall display an error message if there is a validation error or if the pet cannot be saved.
+ The system shall allow the user to select from a list of available types for the pet.
+ The system shall display the owner's name in the form, based on the owner's ID associated with the pet.
+ The system shall save the pet and return to the owner's details page upon successful submission of the form.

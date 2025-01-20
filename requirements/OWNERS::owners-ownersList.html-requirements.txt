@@ -1,0 +1,12 @@
+The system shall display all owner details in a table format.
+ The table shall have the following columns: Name, Address, City, Telephone, and Pets.
+ The system shall allow users to sort the data in each column by clicking on the column header.
+ The system shall allow users to search for owners based on their name or address including first name, last name, zip code and street name.
+ The system shall allow users to filter the list of owners by selecting a specific city or date range.
+  The system shall allow users to paginate through the results by selecting a page number from a drop-down menu or using navigation buttons.
+  The system shall display the total number of pages and the current page number in the pagination control with 10 rows per page as default. 
+  The system shall display the number of items per page selector in the pagination control.
+   The system shall allow users to add new owners by clicking on a "Add Owner" button.
+   The system shall allow users to edit existing owners by clicking on an owner's name in the list.
+   The system shall allow users to delete existing owners by clicking on a "Delete" button next to an owner's name in the list.
+   The system shall display an error message if there is a problem with the database connection or data retrieval.

@@ -1,0 +1,5 @@
+The system shall display a list of veterinarians with their names and specialties.
+The system shall allow the user to navigate through multiple pages of veterinarians using pagination.
+The system shall allow the user to rate a veternerian and add comments based on user feedback. 
+The system shall display average rating of the veterenian which is the average of all ratings recieved. 
+ The system shall provide a way for the user to view the rating and coments history for the vet.

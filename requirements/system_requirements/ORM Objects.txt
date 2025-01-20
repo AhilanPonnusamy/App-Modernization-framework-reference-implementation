@@ -1,0 +1,93 @@
+Processing SQL Table Definition...
+
+Generated Hibernate ORM Code:
+Here is the Hibernate ORM entity class for each table in SQL format:
+ 
+
+ // Owners Entity Class
+ import javax.persistence.Column;
+ import javax.persistence.Entity;
+ import io.quarkus.hibernate.orm.panache.PanacheEntity;
+ 
+ @Entity
+ public class Owner extends PanacheEntity {
+  @Column(name = "first_name")
+  public String firstName;
+  @Column(name = "last_name")
+  public String lastName;
+  public String address;
+  public String city;
+  public String telephone;
+ }
+ 
+
+ // Pets Entity Class
+ import javax.persistence.Column;
+ import javax.persistence.Entity;
+ import io.quarkus.hibernate.orm.panache.PanacheEntity;
+ 
+ @Entity
+ public class Pet extends PanacheEntity {
+  @Column(name = "owner_id")
+  public Integer ownerId;
+  public String name;
+  public Date birthDate;
+  public Integer typeId;
+ }
+ 
+
+ // Visits Entity Class
+ import javax.persistence.Column;
+ import javax.persistence.Entity;
+ import io.quarkus.hibernate.orm.panache.PanacheEntity;
+ 
+ @Entity
+ public class Visit extends PanacheEntity {
+  @Column(name = "pet_id")
+  public Integer petId;
+  public Date date;
+  public String description;
+ }
+ 
+
+ // Veterinarians Entity Class
+ import javax.persistence.Column;
+ import javax.persistence.Entity;
+ import io.quarkus.hibernate.orm.panache.PanacheEntity;
+ 
+ @Entity
+ public class Veterinarian extends PanacheEntity {
+  @Column(name = "vet_id")
+  public Integer vetId;
+  public String name;
+  public String specialty;
+ }
+ 
+
+ // RatingsAndComments Entity Class
+ import javax.persistence.Column;
+ import javax.persistence.Entity;
+ import io.quarkus.hibernate.orm.panache.PanacheEntity;
+ 
+ @Entity
+ public class RatingsAndComment extends PanacheEntity {
+  @Column(name = "visit_id")
+  public Integer visitId;
+  @Column(name = "vet_id")
+  public Integer vetId;
+  public Integer rating;
+  public String comment;
+ }
+ 
+
+ // TypesOfPets Entity Class
+ import javax.persistence.Column;
+ import javax.persistence.Entity;
+ import io.quarkus.hibernate.orm.panache.PanacheEntity;
+ 
+ @Entity
+ public class TypeOfPet extends PanacheEntity {
+  @Column(name = "type_id")
+  public Integer typeId;
+  public String typeName;
+ }

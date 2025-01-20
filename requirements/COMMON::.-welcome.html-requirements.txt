@@ -1,0 +1,4 @@
+The system shall have a home page with a welcome message and a picture of pets.
+ The system shall be able to display the welcome message in the language specified by the user.
+ The system shall be able to display the image of pets regardless of the language selected by the user.
+ The system shall be able to handle requests from different users and display the appropriate content based on their preferences.
