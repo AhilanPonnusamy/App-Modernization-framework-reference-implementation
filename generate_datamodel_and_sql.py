@@ -12,7 +12,7 @@ def query_vllm(prompt, llm_url):
     }
     
     payload = {
-        "model": "gpt-3.5-turbo",  # Model name for vLLM
+        "model": "granite",  # Model name for vLLM
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
