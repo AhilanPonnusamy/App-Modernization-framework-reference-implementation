@@ -48,6 +48,8 @@ The following is the sysem specification that I used for this project, I do beli
 
 ## Generating Artifacts for the new Application
 
+### This reference implementation gerenates Quarkus framework as the target application framework.
+
 5. Navigate to the **Moderization Workbench** tab. Select the newly created requirements file **<ALL>::system-requirements.txt** from the drop down and select **Generate data model and SQL** option from the second drop down. The system will invoke the LLM and display the generated output. Review the output for completeness and save it.
 ![App UI](./images/DatamodelandSQL.png)
 
@@ -60,5 +62,5 @@ The following is the sysem specification that I used for this project, I do beli
 8. Repeat the above step for generating Test cases for the APIs by selecting **Generate Test Cases** as the operation in the second drop down and clicking on **Generate Test Cases** button.
 ![App UI](./images/GenerateTestcases.png)
 
-9. The next step is to generate UI code, for this select **Generate UI** as the operation from the second drop down, copy and paste the functional requirements of the desired screen in the **Enter Requirements** text box e.g.,**OWNERS::owners-ownerDetails.html-requirements.txt** and click on **Generate UI** button.
+9. The next step is to generate UI code, for this, select **Generate UI** as the operation from the second drop down, copy and paste the functional requirements of the desired screen (e.g.,**OWNERS::owners-ownerDetails.html-requirements.txt**)  in the **Enter Requirements** text box and click on **Generate UI** button.
 ![App UI](./images/GenerateUI.png)
