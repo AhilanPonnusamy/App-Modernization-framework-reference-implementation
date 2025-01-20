@@ -64,3 +64,6 @@ The following is the sysem specification that I used for this project, A lower c
 
 9. The next step is to generate UI code, for this, select **Generate UI** as the operation from the second drop down, copy and paste the functional requirements of the desired screen (e.g.,**OWNERS::owners-ownerDetails.html-requirements.txt**)  in the **Enter Requirements** text box and click on **Generate UI** button.
 ![App UI](./images/GenerateUI.png)
+
+> [!TIP]
+> The reference implementation utilizes generic prompts to facilitate seamless transitions between different models. However, employing model-specific prompt templates, such as those provided here, can significantly enhance the accuracy and consistency of the responses.
