@@ -346,7 +346,7 @@ with tabs[0]:
                     if new_option:
                         if save_grouping(new_option):
                             st.success(f"New option '{new_option}' added successfully!")
-                            st.experimental_rerun()  # Reload the app to update the dropdown options
+                            st.rerun()  # Reload the app to update the dropdown options
                         else:
                             st.warning(f"Option '{new_option}' already exists.")
                 else:
