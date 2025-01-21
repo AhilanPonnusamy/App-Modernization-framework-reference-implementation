@@ -15,8 +15,7 @@ The following is the sysem specification that I used for this project, A lower c
 
 2. Download this code repository (install git if it is not already setup, You can also downlod the zip file directly from the main page under code option as an alternate)
 
-3. Download and serve the grantile code model in InstructLab as shown below. Make sure the context length (max_ctx_size) is set to a higher number e.g. 100k in the **config.yaml** file to utilize the bigger context window available in the 128k model.
-![App UI](./images/ContextSize.png)
+3. Download and serve the grantile code model in InstructLab as shown below. 
 ```
   $ ilab model serve --model-path models/granite-8b-code-instruct-128k.Q5_K_M.gguf
 ```
@@ -66,5 +65,7 @@ The following is the sysem specification that I used for this project, A lower c
 9. The next step is to generate UI code, for this, select **Generate UI** as the operation from the second drop down, copy and paste the functional requirements of the desired screen (e.g.,**OWNERS::owners-ownerDetails.html-requirements.txt**)  in the **Enter Requirements** text box and click on **Generate UI** button.
 ![App UI](./images/GenerateUI.png)
 
-> [!TIP]
+> [!NOTE]
 > The reference implementation utilizes generic prompts to facilitate seamless transitions between different models. However, employing model specific prompt templates, such as those provided here(https://www.ibm.com/granite/docs/models/code/#code-generation), can significantly enhance the accuracy and consistency of the responses.
+>
+>This exercise focuses only on generating functional requirements.However, the same processs can be applied to generate non-functional requirements from load test scripts e.g. JMeter and other articats.
