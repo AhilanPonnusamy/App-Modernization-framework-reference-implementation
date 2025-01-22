@@ -11,7 +11,7 @@ The following is the sysem specification that I used for this project, A lower c
 
 ## Prerequisites
 
-1.  Install Python and pip if it is not already installed. You need Python version 3.8 or higher.
+1.  Install Python,pip, and Streamlit if it is not already installed. You need Python version 3.8 or higher.
 
 2. Download this code repository (install git if it is not already setup, You can also downlod the zip file directly from the main page under code option as an alternate)
 
